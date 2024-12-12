@@ -1,0 +1,12 @@
+.Logout1{
+    display: flex;
+    margin-left: 86vh;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}

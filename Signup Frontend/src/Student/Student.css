@@ -1,0 +1,133 @@
+.student-dashboard-custom {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.student-dashboard-custom__header {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #343a40;
+  text-align: center;
+}
+
+.student-dashboard-custom__subheader {
+  margin-top: 20px;
+  color: #495057;
+}
+
+.student-dashboard-custom__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.student-dashboard-custom__table th,
+.student-dashboard-custom__table td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.student-dashboard-custom__table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.student-dashboard-custom__table-striped tbody tr:nth-of-type(odd) {
+  background-color: #e9ecef;
+}
+
+.student-dashboard-custom__course-image {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.student-dashboard-custom__action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.student-dashboard-custom__btn-info,
+.student-dashboard-custom__btn-success {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.student-dashboard-custom__btn-info {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.student-dashboard-custom__btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.student-dashboard-custom__btn-info:hover,
+.student-dashboard-custom__btn-success:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .student-dashboard-custom {
+    padding: 15px;
+  }
+
+  .student-dashboard-custom__header,
+  .student-dashboard-custom__subheader {
+    font-size: 1.5rem;
+  }
+
+  .student-dashboard-custom__course-image {
+    width: 80px;
+  }
+
+  .student-dashboard-custom__table th,
+  .student-dashboard-custom__table td {
+    padding: 10px;
+  }
+
+  .student-dashboard-custom__btn-info,
+  .student-dashboard-custom__btn-success {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .student-dashboard-custom__table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .student-dashboard-custom__table th,
+  .student-dashboard-custom__table td {
+    display: block;
+    text-align: right;
+    position: relative;
+    padding: 10px;
+  }
+
+  .student-dashboard-custom__table th {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .student-dashboard-custom__table td {
+    border-top: 1px solid #dee2e6;
+    margin-top: 10px;
+  }
+}

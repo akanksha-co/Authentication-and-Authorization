@@ -1,0 +1,213 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; 
+}
+
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden; 
+    box-sizing: border-box; 
+    height: auto;
+    position: relative;
+    top: 50%;
+    background: linear-gradient(to bottom, #5900ff, #f8f9fa); 
+    
+}
+
+/* Header Styling */
+.signUp-header {
+    text-align: center;
+    font-size: 28px;
+    margin: 15px 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form Layout */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Group Styling */
+.form-group {
+    position: relative;
+    margin: 5px 0;
+}
+
+.form-input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    outline: none;
+    background: none;
+    transition: border-color 0.3s ease;
+    background: linear-gradient(to bottom,  #5900ff, #f8f9fa); 
+}
+
+.form-input:focus {
+    border-bottom: 2px solid #333;
+}
+
+.Input-Label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+    color: #aaa;
+    pointer-events: none;
+    font-size: 16px;
+    background-color: #fff;
+    padding: 0 4px;
+}
+
+.form-group.active .Input-Label,
+.form-input:focus + .Input-Label,
+.form-input:not(:placeholder-shown) + .Input-Label {
+    top: -3px;
+    transform: translateY(-100%);
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Select Boxes */
+.gender-container {
+    margin: 15px 0;
+}
+
+.gender-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.gender-select:focus {
+    border-color: #333;
+}
+
+/* Button Styling */
+.signup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: fadeIn 1s ease;
+}
+
+.signup-button:hover {
+    transform: scale(1.05);
+    background-color: #000;
+}
+
+.loaderr {
+    width: 20px;
+    height: 20px;
+    border: 3px solid transparent;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    border-right: 4px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .signup-container {
+        padding: 15px;
+    }
+
+    .signUp-header {
+        font-size: 24px;
+    }
+
+    .form-input,
+    .gender-select {
+        font-size: 14px;
+    }
+
+    .signup-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+/* Role Container */
+.role-container {
+    margin: 15px 0;
+}
+
+.role {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 5px;
+    color: #555; /* Change text color for better visibility */
+}
+
+/* Role Select Box */
+.role-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease; /* Smooth transition on focus */
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Change border color on focus */
+.role-select:focus {
+    border-color: #333; /* Darker border on focus */
+    background-color: #fff; /* White background on focus */
+}
+

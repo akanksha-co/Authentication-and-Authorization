@@ -1,0 +1,117 @@
+
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    background: linear-gradient(to bottom, #ffc0cb, #f8f9fa); 
+}
+
+.login-header {
+    text-align: center;
+    font-size: 28px;
+    margin: 15px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-group {
+    position: relative;
+    margin: 8px 0;
+}
+
+
+.form-input {
+    width: 100%;
+    padding: 4px;
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 16px;
+    font-family: cursive;
+    outline: none;
+    background: none;
+}
+.form-input:focus {
+    border-bottom: 2px solid #333;
+}
+
+.input-label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+    color: #aaa;
+    pointer-events: none;
+    font-size: 16px;
+}
+
+
+.form-group.active .input-label,
+.form-input:focus + .input-label,
+.form-input:not(:placeholder-shown) + .input-label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 13px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: fadeIn 1s ease;
+}
+
+
+.login-button:hover {
+    transform: scale(1.05);
+    background-color: #000;
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid transparent;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
