@@ -61,7 +61,7 @@ Authentication-and-Authorization
    ```env
    MONGO_URI=<Your MongoDB connection string>
    JWT_SECRET=<Your JWT secret key>
-   PORT=5000
+   PORT=3000
    ```
 
 4. Navigate to the frontend directory and install dependencies:
@@ -79,7 +79,7 @@ Run the backend server using Nodemon:
 ```bash
 nodemon index.js
 ```
-The backend server runs on `http://localhost:5000` by default.
+The backend server runs on `http://localhost:3000` by default.
 
 ### Frontend
 Run the frontend using:
@@ -122,16 +122,12 @@ Feel free to fork this repository, create a feature branch, and submit a pull re
 
 ---
 
-## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
 
 ## Contact
 
 For any inquiries, please reach out to:
 - Developer Name: Akanksha Kumari
--
+
 
 ---
