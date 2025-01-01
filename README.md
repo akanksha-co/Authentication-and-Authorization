@@ -86,7 +86,7 @@ Run the frontend using:
 ```bash
 npm run dev
 ```
-The frontend runs on `http://localhost:3000` by default.
+The frontend runs on `http://localhost:5173` by default.
 
 ---
 
